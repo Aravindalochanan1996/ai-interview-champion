@@ -1,6 +1,6 @@
 (function () {
   const TOPICS = window.TOPICS;
-  console.log(TOPICS);
+  console.log(TOPICS, window.TOPICS);
   const GROUPS = [
     { id: "AI", name: "Artificial Intelligence" },
     { id: "Data", name: "Data" },
