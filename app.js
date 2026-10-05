@@ -1,5 +1,6 @@
 (function () {
   const TOPICS = window.TOPICS;
+  console.log(TOPICS);
   const GROUPS = [
     { id: "AI", name: "Artificial Intelligence" },
     { id: "Data", name: "Data" },
@@ -249,7 +250,7 @@
       if (filter !== "all" && t.group !== filter && t.id !== filter) return;
       t.interview.forEach(([q, a]) => list.push({ q, a, t }));
     });
-    for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [list[i], list[j]] = [list[j], list[i]]; }
+    for (let i = list.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[list[i], list[j]] = [list[j], list[i]]; }
     return list;
   }
   function renderDrill() {
