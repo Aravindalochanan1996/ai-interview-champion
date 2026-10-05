@@ -6,6 +6,7 @@
     { id: "Data", name: "Data" },
     { id: "Tools", name: "Tools & Platforms" }
   ];
+  console.log(GROUPS);
   const byId = Object.fromEntries(TOPICS.map(t => [t.id, t]));
   const $ = s => document.querySelector(s);
   const main = $("#main");
